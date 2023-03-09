@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- BASIC META -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- RESPONSIVE META -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- WEBSITE INFO -->
+        <meta name="keywords" content="IFRN, Calculadora, Notas">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Eduardo Aquino da Silva">
+
+        <!-- THEME COLOR -->
+        <meta name="theme-color" content="#212529">
+
+        <!-- PAGE TITLE -->
+        <title>Calculadora de Notas Web IFRN</title>
+
+        <!-- WEBSITE ICON -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- CSS STYLESHEETS -->
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <!-- MAIN -->
+        <main class="container">
+            <section class="content">
+                <div class="logo-pic">
+                    <img src="images/logo-ifrn-grande.png" alt="Logo branco do IFRN">
+                </div>
+
+                <h1>Calculadora IFRN</h1>
+                
+                <div class="forms">
+                    <p>
+                        <label for="iBim">Quant. de bimestres: </label>
+                        <select name="nBim" id="iBim">
+                            <option selected value="4">4</option>
+                            <option value="2">2</option>
+                        </select>
+                    </p>
+
+                    <p><label for="iB1">Nota do 1º Bimestre: </label><input type="number" placeholder="0-100" size="5" id="iB1" min="0" max="100"></p>
+                    <p><label for="iB2">Nota do 2º Bimestre: </label><input type="number" placeholder="0-100" size="5" id="iB2" min="0" max="100"></p>
+                    <p><label for="iB1">Nota do 3º Bimestre: </label><input type="number" placeholder="0-100" size="5" id="iB3" min="0" max="100"></p>
+                    <p><label for="iB2">Nota do 4º Bimestre: </label><input type="number" placeholder="0-100" size="5" id="iB4" min="0" max="100"></p>
+                </div>
+
+                <div class="buttons">
+                    <button id="reset">ZERAR</button>
+                    <button id="btn-calc">CALCULAR</button>
+                </div>
+
+                <div class="forms2">
+                    <p><label for="iLG">Última Nota: </label><input type="text" placeholder="Última Nota" id="iLG" disabled></p>
+                    <p><label for="iFG">Média Final: </label><input type="text" placeholder="Média Final" id="iFG" disabled></p>
+                    <p><label for="iSit">Situação: </label><input type="text" placeholder="Situação" id="iSit" disabled></p>
+                    <p><label for="iNPF">Nota necessária na Prova Final: </label><input type="text" placeholder="Prova Final" id="iNPF" disabled></p>
+                </div>
+
+                <p id="ad">As notas devem ser inseridas utilizando a notação de 0 a 100</p>
+            </section>
+        </main>
+
+        <!-- JS SCRIPTS -->
+        <script src="scripts/functions.js"></script>
+    </body>
+</html>
